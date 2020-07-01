@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 export class CheckoutPage implements OnInit {
 
   constructor( private router : Router) { }
-  place(){
-    this.router.navigate ([ '/checkout']);
-  }
+  // place(){
+  //   this.router.navigate ([ '/checkout']);
+  // }
   ngOnInit() {
   }
 
