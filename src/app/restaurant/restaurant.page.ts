@@ -32,9 +32,9 @@ burgerRestaurant = [
       this.viewProducts = this.burgerRestaurant;
     }
   };
- OnproductClick() {
-   this.router.navigate ([ 'infoproduct'])
- }
+//  OnproductClick() {
+//    this.router.navigate ([ 'info-product'])
+//  }
 }
 var restaurant = [{
   name: 'adelmo', 
