@@ -3,17 +3,16 @@
     <ion-title>Restaurant List</ion-title>
   </ion-toolbar>
   <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
+    <ion-searchbar (ionInput)="getItems($event)">
+    </ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 <ion-content fullscreen>
-  <!-- <ion-list>
-    <ion-item><ion-card>Restaurant 1</ion-card></ion-item>
-    <ion-item>Restaurant 2</ion-item>
-    <ion-item>Restaurant 3</ion-item>
-    <ion-item>Restaurant 4</ion-item>
-    <ion-item>Restaurant 5</ion-item>  
-  </ion-list> -->
   <ion-slides>
   <ion-slide> <ion-card-content (click) = "onRestaurantClick()">
     <div class="slide">

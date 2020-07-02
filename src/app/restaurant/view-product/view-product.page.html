@@ -1,15 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>view-product</ion-title>
+    <ion-title> Menu</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-back-button defaultHref='./restaurant.page'></ion-back-button>
 <ion-content>
+  <ion-segment scrollable [value] = "selectedRestaurant" (ionChange) = "onRestairantChange ($event)">
+   <ion-segment-button *ngFor= "let category of categories" [ value ] = "category">
+     {{category}}
+     </ion-segment-button>
+  </ion-segment>
+  <ion-card *ngFor = "let product of viewProducts">
+
+    <ion-card-content class = "no-padding" click = "onProductClick()">
+      <img [src] = "product.imgPath" height="200px" width="100%" alt = "image">
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-subtitle> {{product.name}}</ion-card-subtitle>
+      <ion-card-title> $ {{product.price}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+
   <ion-card-content (click)= "onProductClick()">
     <div class="single-product-container"> 
     <img src= "https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550-500x500.jpg" height="100px" width="100px">
-    <div class= "price " > $ 14.50 
-    </div> 
+    <div class= "price " > $ 14.50 </div> 
+    <div class = "name ">ClassicHamburger</div>
+    
   </div>
- </ion-card-content>
+ </ion-card-content> 
+
+ <ion-card-content (click)= "onProductClick()">
+  <div class="single-product-container"> 
+  <img src= "https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550-500x500.jpg" height="100px" width="100px">
+  <div class= "price " > $ 12.50 
+  </div> 
+</div>
+</ion-card-content> 
 </ion-content>

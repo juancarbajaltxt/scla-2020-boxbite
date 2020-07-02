@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 export class ViewProductPage implements OnInit {
 
   constructor(private router : Router ) { 
-    onProductClick() {
-      this.router.navigate (['info-product']);
-    }
-  }
+   }
+  onProductClick() {
+    this.router.navigate ([ './view-product/info-product'])
+   }
    ngOnInit() {
    }
 
