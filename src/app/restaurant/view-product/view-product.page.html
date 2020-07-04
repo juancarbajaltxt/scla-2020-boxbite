@@ -5,7 +5,7 @@
 </ion-header>
 <ion-back-button defaultHref='./restaurant.page'></ion-back-button>
 <ion-content>
-  <ion-segment scrollable [value] = "selectedRestaurant" (ionChange) = "onRestairantChange ($event)">
+  <ion-segment scrollable [value] = "selectedRestaurant" (ionChange) = "onRestaurantChange ($event)">
    <ion-segment-button *ngFor= "let category of categories" [ value ] = "category">
      {{category}}
      </ion-segment-button>
@@ -34,8 +34,7 @@
  <ion-card-content (click)= "onProductClick()">
   <div class="single-product-container"> 
   <img src= "https://www.thewholesomedish.com/wp-content/uploads/2019/04/The-Best-Classic-Hamburgers-550-500x500.jpg" height="100px" width="100px">
-  <div class= "price " > $ 12.50 
-  </div> 
+  <div class= "price " > $ 12.50 </div> 
 </div>
 </ion-card-content> 
 </ion-content>

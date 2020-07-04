@@ -14,11 +14,14 @@ export class RestaurantPage implements OnInit {
  burgerRestaurant = [
   {imgPath: "https://blogs.biomedcentral.com/on-medicine/wp-content/uploads/sites/6/2019/09/iStock-1131794876.t5d482e40.m800.xtDADj9SvTVFjzuNeGuNUUGY4tm5d6UGU5tkKM0s3iPk-620x342.jpg", price : 10.22, name : 'vegetables' }
 ];
-  items: any[];
+
   
   onRestaurantClick() {
     this.router.navigate([ 'view-product']);
-  }
+  };
+  onMcClick () {
+    this.router.navigate([ 'view-product']);
+  };
   
   viewProducts = [];
   constructor(private router : Router  ) { }
@@ -41,8 +44,8 @@ export class RestaurantPage implements OnInit {
 
   // class SearchPage {
 
-  //   searchQuery: string = '';
-  //   items: string[];
+   searchQuery: string = '';
+    items: string[];
   //   constructor() {
   //     this.initializeItems();
   //   }
@@ -55,14 +58,16 @@ export class RestaurantPage implements OnInit {
   //       'elmo',
       ];
     }
-     getItems(ev: any) {      this.initializeItems();    const val = ev.target.value;     if (val && val.trim() != '') {      this.items = this.items.filter((item) => {        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+     getItems(ev: any) {     
+        this.initializeItems();    
+        const val = ev.target.value;  
+           if (val && val.trim() != '') {   
+            this.items = this.items.filter((item) => { 
+           return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
        });
        }
  }
-  
-  }
-
-
+ }; 
 // var restaurant = [{
 //   name: 'adelmo', 
 //  address: '1114 los angeles',
