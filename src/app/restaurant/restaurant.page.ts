@@ -20,7 +20,7 @@ export class RestaurantPage implements OnInit {
     this.router.navigate([ 'view-product']);
   };
   onMcClick () {
-    this.router.navigate([ 'view-product']);
+    this.router.navigate([ 'mcmenu']);
   };
   
   viewProducts = [];
