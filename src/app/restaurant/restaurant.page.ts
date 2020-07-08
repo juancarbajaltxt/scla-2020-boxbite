@@ -20,7 +20,7 @@ export class RestaurantPage implements OnInit {
     this.router.navigate([ 'view-product']);
   };
   onMcClick () {
-    this.router.navigate([ 'mcmenu']);
+    this.router.navigate([ '/mcmen']);
   };
   
   viewProducts = [];
@@ -38,7 +38,7 @@ export class RestaurantPage implements OnInit {
   //   }
   // };
   onProductClick() {
-   this.router.navigate ([ 'info-product'])
+   this.router.navigate ([ '/view-product/info-product'])
   };
 
 
@@ -51,11 +51,11 @@ export class RestaurantPage implements OnInit {
   //   }
      initializeItems() {
       this.items = [
-         'Burger king',
-         'tacos',
-         'taco bell',
-  //       'pupusas',
-  //       'elmo',
+  //        'Burger king',
+  //        'tacos',
+  //        'taco bell',
+  // //       'pupusas',
+  // //       'elmo',
       ];
     }
      getItems(ev: any) {     

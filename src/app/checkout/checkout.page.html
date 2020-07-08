@@ -3,9 +3,9 @@
     <ion-title>checkout</ion-title>
   </ion-toolbar>
 </ion-header>
- 
+<ion-back-button defaultHref="./restaurant.page"></ion-back-button> 
 <ion-content>
-  <ion-back-button defaultHref="./restaurant.page"></ion-back-button>
+
   <app-info-product></app-info-product>
   <!-- <style>
     :root {
@@ -19,7 +19,7 @@
  <div class = "flex-item-center">
   <div class = "flex2 flex-middle">
     <ion-text color = "secondary">
-      <span> Sub Total {{350}}</span>
+      <span> Sub Total: {{price}}</span>
     </ion-text>
   </div>
   <div class = "flex1">

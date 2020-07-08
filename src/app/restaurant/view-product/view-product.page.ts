@@ -6,13 +6,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./view-product.page.scss'],
 })
 export class ViewProductPage implements OnInit {
+  viewProducts: any;
+  burgerProducts: any;
 
   constructor(private router : Router ) { 
    }
-  onProductClick() {
+  
+   ngOnInit() {
+     this.viewProducts = this.burgerProducts;
+   }
+   
+   onProductClick() {
     this.router.navigate ([ './view-product/info-product'])
    }
-   ngOnInit() {
-   }
-
 }

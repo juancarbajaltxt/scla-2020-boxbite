@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { RestaurantPage } from './restaurant.page';
-
+ 
 const routes: Routes = [
   {
     path: '',
@@ -11,7 +11,8 @@ const routes: Routes = [
   {
     path: 'view-product',
     loadChildren: () => import('./view-product/view-product.module').then( m => m.ViewProductPageModule)
-  }
+  }, 
+   
 ];
 
 @NgModule({
