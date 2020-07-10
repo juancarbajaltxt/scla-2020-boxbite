@@ -19,10 +19,6 @@ export class RestaurantPage implements OnInit {
   onRestaurantClick() {
     this.router.navigate([ 'view-product']);
   };
-  onMcClick () {
-    this.router.navigate([ '/mcmen']);
-  };
-  
   viewProducts = [];
   constructor(private router : Router  ) { }
   ngOnInit() {

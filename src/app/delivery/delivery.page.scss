@@ -2,10 +2,17 @@ ion-icon{
     height: 100px;
     width: 100px;
     align-items: center;
+    margin-left: 20px;
+    color: red($color: #c2bb55);
 }
 ion-button{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     align-items: center;
-    color: greenyellow
+    margin-left:70px;
+    color: greenyellow;
+}
+div{
+    position: relative;
+    margin-top: -60px;
 }
