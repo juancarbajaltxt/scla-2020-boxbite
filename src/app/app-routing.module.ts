@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
   },
   {
-    path: 'checkout',
-    loadChildren: () => import('./checkout/checkout.module').then( m => m.CheckoutPageModule)
+    path: 'delivery',
+    loadChildren: () => import('./delivery/delivery.module').then( m => m.DeliveryPageModule)
   },
 ];
 @NgModule({
