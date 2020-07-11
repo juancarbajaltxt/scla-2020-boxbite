@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>address</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-input id = "address" [(ngModel)]="add">
+  
+</ion-input>
+<ion-button click = "sentAddress()" > </ion-button>
+<p> You are sending: </p>
+<p> {{this.add}}</p>
+
+</ion-content>
+<ion-button  expand="full" color="success"  href= './delivery'>Complete Order</ion-button> 

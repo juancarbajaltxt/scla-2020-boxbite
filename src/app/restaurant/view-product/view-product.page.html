@@ -10,7 +10,7 @@
      {{category}}
      </ion-segment-button>
   </ion-segment>
-  <ion-card *ngFor = "let product of viewProducts">
+  <!-- <ion-card *ngFor = "let product of viewProducts">
 
     <ion-card-content class = "no-padding" click = "onProductClick()">
       <img [src] = "product.imgPath" height="200px" width="100%" alt = "image">
@@ -19,12 +19,12 @@
       <ion-card-subtitle> {{product.name}}</ion-card-subtitle>
       <ion-card-title> $ {{product.price}}</ion-card-title>
     </ion-card-header>
-  </ion-card>
+  </ion-card> -->
 
 
   <ion-card-content >
     <ion-item>
-      <ion-label> ClassicHamburger</ion-label>
+      <ion-label> classicHamburger</ion-label>
       <p>$ 14.50 </p>
       <ion-checkbox color="dark" checked="false"></ion-checkbox>
     
@@ -107,5 +107,5 @@
  
  
 </ion-card-content> 
-<ion-button  expand="full" color="success"  href= './delivery'>Place Order</ion-button> 
+<ion-button  expand="full" color="success"  href= './address'>Place Order</ion-button> 
 </ion-content>

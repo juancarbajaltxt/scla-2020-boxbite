@@ -6,17 +6,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./view-product.page.scss'],
 })
 export class ViewProductPage implements OnInit {
-  viewProducts: any;
-  burgerProducts: any;
-
-  constructor(private router : Router ) { 
+  public form = [ 
+    {val: 'classicHamburger', isChecked:false},
+    {val: ' ', isChecked: false},
+    {val: ' ', isChecked:false},
+    {val: ' ', isChecked:false},
+    {val: ' ', isChecked:false},
+  ]
+  dataService: any;
+  classicHamburger: any;
+  check() { 
+    if (this.classicHamburger.isChecked != "false"){ 
+      this.dataService.setData(this.classicHamburger)
+    }
+  };
+  constructor( ) { 
    }
   
    ngOnInit() {
-     this.viewProducts = this.burgerProducts;
+     
    }
    
-   onProductClick() {
-    this.router.navigate ([ './view-product/info-product'])
-   }
+  
 }
