@@ -24,34 +24,19 @@ export class RestaurantPage implements OnInit {
   ngOnInit() {
     this.viewProducts = this.burgerProducts;
   }
-  // onRestaurantChange(event) {
-  //   console.log (" ll00l"), event.detail.value;
-  //   if (event.detail.value == this.burgerProducts){
-  //     this.viewProducts = this.burgerProducts;
-  //   }
-  //   else if (event.detail.value == 'burger'){
-  //     this.viewProducts = this.burgerRestaurant;
-  //   }
-  // };
+  
   onProductClick() {
    this.router.navigate ([ '/view-product/info-product'])
   };
 
 
-  // class SearchPage {
 
    searchQuery: string = '';
     items: string[];
-  //   constructor() {
-  //     this.initializeItems();
-  //   }
+  
      initializeItems() {
       this.items = [
-  //        'Burger king',
-  //        'tacos',
-  //        'taco bell',
-  // //       'pupusas',
-  // //       'elmo',
+  
       ];
     }
      getItems(ev: any) {     
@@ -64,12 +49,3 @@ export class RestaurantPage implements OnInit {
        }
  }
  }; 
-// var restaurant = [{
-//   name: 'adelmo', 
-//  address: '1114 los angeles',
-//  category: 'salvadoran'
-// }]; 
-
-//  function checkout (){ 
-
-//  };

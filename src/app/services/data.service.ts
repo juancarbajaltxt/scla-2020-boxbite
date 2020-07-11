@@ -4,13 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
- data: any; 
+ data:any; 
 
   constructor() { }
-  setData(data){
-    this.data = data
+  setData(data ){
+    this.data = data;
+    console.log(this.data);
+
   }
   getData(){
-    return this.data
+    return this.data;
+    console.log(this.data);
   }
 }

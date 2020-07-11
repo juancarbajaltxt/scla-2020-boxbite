@@ -8,9 +8,9 @@
 <ion-input id = "address" [(ngModel)]="add">
   
 </ion-input>
-<ion-button click = "sentAddress()" > </ion-button>
+<ion-button (click) = "sendAddress()" > </ion-button>
 <p> You are sending: </p>
 <p> {{this.add}}</p>
 
 </ion-content>
-<ion-button  expand="full" color="success"  href= './delivery'>Complete Order</ion-button> 
+<ion-button  expand="full" color="success"  href= './delivery' (click) ="sendAddress()">Complete Order</ion-button> 

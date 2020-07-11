@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-delivery',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./delivery.page.scss'],
 })
 export class DeliveryPage implements OnInit {
-
-  constructor() { }
+ lol:any;
+  constructor( private dataService: DataService) { }
 
   ngOnInit() {
+    this.lol= this.dataService.getData();
+    console.log(this.lol);
   }
+  
 
 }
