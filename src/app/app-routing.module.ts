@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'tab-bar',
     loadChildren: () => import('./tab-bar/tab-bar.module').then( m => m.TabBarPageModule)
   },
+  {
+    path: 'driver',
+    loadChildren: () => import('./pages/driver/driver.module').then( m => m.DriverPageModule)
+  },
+  {
+    path: 'log',
+    loadChildren: () => import('./log/log.module').then( m => m.LogPageModule)
+  },
 ];
 @NgModule({
   imports: [
