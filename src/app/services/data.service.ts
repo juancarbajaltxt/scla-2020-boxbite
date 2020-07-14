@@ -29,15 +29,21 @@ export class AuthService{
 
 export class DataService  {
  data:any; 
+ address:any;
 
   constructor() { }
-  setData(data ){
+  setData(data){
     this.data = data;
     console.log(this.data);
-
   }
+  setAddress(address){
+    this.address = address;
+    console.log(this.address);
+  }
+
   getData(){
-    return this.data;
-    console.log(this.data);
+    var payload = {data: this.data, address: this.address};
+    console.log(payload);
+    return payload;
   }
 }

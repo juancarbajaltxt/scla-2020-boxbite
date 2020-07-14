@@ -5,6 +5,7 @@ import { DataService } from 'src/app/services/data.service';
   selector: 'app-view-product',
   templateUrl: './view-product.page.html',
   styleUrls: ['./view-product.page.scss'],
+  providers:[DataService],
 })
 export class ViewProductPage implements OnInit {
   public form = {

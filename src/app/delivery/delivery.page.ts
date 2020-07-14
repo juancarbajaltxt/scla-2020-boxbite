@@ -5,6 +5,7 @@ import { DataService } from '../services/data.service';
   selector: 'app-delivery',
   templateUrl: './delivery.page.html',
   styleUrls: ['./delivery.page.scss'],
+  providers:[DataService],
 })
 export class DeliveryPage implements OnInit {
  lol:any;

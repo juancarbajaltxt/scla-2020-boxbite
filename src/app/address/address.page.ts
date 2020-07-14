@@ -4,14 +4,15 @@ import { DataService } from '../services/data.service';
   selector: 'app-address',
   templateUrl: './address.page.html',
   styleUrls: ['./address.page.scss'],
+  providers:[DataService],
 })
 export class AddressPage implements OnInit {
 
   add: string = "";
-   mirrorData = {}
   sendAddress(){
-    this.mirrorData = {mirrodata: this.add};
-    this.dataService.setData( this.mirrorData);
+    var payload = this.add;
+    console.log(payload);
+    this.dataService.setAddress(payload);
     // this.mirrorData = { mirrordata: ""}
     
   }
